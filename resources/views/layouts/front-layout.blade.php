@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="Albatross">
-    <meta name="keywords" content="Albatross">
+    <meta name="description" content="Monaspa">
+    <meta name="keywords" content="Monaspa">
     <meta name="author" content="PIXINVENT">
-    <title>@yield('title', 'Dashboard') - Albatross</title>
+    <title>@yield('title', 'Dashboard') - Monaspa</title>
 
     <link rel="apple-touch-icon" href="{{ asset('theme/app-assets/images/ico/apple-icon-120.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('theme/app-assets/images/ico/favicon.ico') }}">
@@ -76,7 +76,7 @@
                             id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <div class="user-nav d-sm-flex d-none"><span
-                                    class="user-name font-weight-bolder">Albatross</span><span
+                                    class="user-name font-weight-bolder">Monaspa</span><span
                                     class="user-status">Admin</span></div>
                             <span class="avatar">
 
@@ -151,7 +151,7 @@
                                         </g>
                                     </g>
                                 </svg></span>
-                            <h2 class="brand-text">Albatross</h2>
+                            <h2 class="brand-text">Monaspa</h2>
                         </a></li>
                     <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0"
                             data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4"
@@ -163,22 +163,30 @@
             <div class="shadow-bottom"></div>
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class="{{ request()->is('/') ? 'active' : '' }}"><a class="d-flex align-items-center"
+                    {{-- <li class="{{ request()->is('/') ? 'active' : '' }}"><a class="d-flex align-items-center"
                             href="{{ route('dashboard') }}"><i data-feather="circle"></i><span
-                                class="menu-item text-truncate" data-i18n="Dashboard">Dashboard</span></a>
+                                class="menu-item text-truncate" data-i18n="Dashboard">Dashboard</span></a> --}}
 
                     <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i
                             data-feather="more-horizontal"></i>
                     </li>
 
-                    <li class="{{ request()->is('customers') ? 'active' : '' }}"><a class="d-flex align-items-center"
-                            href="#default"><i data-feather="user"></i><span class="menu-item text-truncate"
-                                data-i18n="Customers">Customers</span></a>
+
+
+                    <li class="{{ request()->is('teams') ? 'active' : '' }}"><a class="d-flex align-items-center"
+                            href="{{ route('teams.index') }}"><i data-feather="user"></i><span
+                                class="menu-item text-truncate" data-i18n="Customers">Teams</span></a>
                     </li>
 
+                    <li class="{{ request()->is('games') ? 'active' : '' }}"><a class="d-flex align-items-center"
+                            href="{{ route('games.index') }}"><i data-feather="play"></i><span
+                                class="menu-item text-truncate" data-i18n="Customers">Games</span></a>
+                    </li>
 
-
-
+                    <li class="{{ request()->is('news') ? 'active' : '' }}"><a class="d-flex align-items-center"
+                            href="{{ route('news.index') }}"><i data-feather="file-minus"></i><span
+                                class="menu-item text-truncate" data-i18n="Blog">Blog</span></a>
+                    </li>
 
                 </ul>
             </div>
@@ -209,8 +217,8 @@
         <!-- BEGIN: Footer-->
         <footer class="footer footer-static footer-light">
             <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy;
-                    2022<a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Blocks
-                        Node</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span
+                    2022<a class="ml-25" href="#" target="_blank">Davit
+                        Osadze</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span><span
                     class="float-md-right d-none d-md-block">Made with<i data-feather="heart"></i></span></p>
         </footer>
         <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>

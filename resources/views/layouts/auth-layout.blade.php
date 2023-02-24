@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="Albatross">
-    <meta name="keywords" content="Albatross">
+    <meta name="description" content="Monaspa">
+    <meta name="keywords" content="Monaspa">
     <meta name="author" content="PIXINVENT">
     <title>Login</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
@@ -32,8 +32,7 @@
 
     <link rel="stylesheet" type="text/css"
         href="{{ asset('theme/app-assets/css/core/menu/menu-types/vertical-menu.css') }}">
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('theme/app-assets/css/plugins/forms/form-validation.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme/app-assets/css/plugins/forms/form-validation.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('theme/app-assets/css/pages/page-auth.css') }}">
     <!-- END: Page CSS-->
 
